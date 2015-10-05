@@ -1,0 +1,45 @@
+{
+  "name": "jetstream",
+  "version": "0.0.1",
+  "description": "An RPG-style character editor",
+  "keywords": [
+    "jetstream",
+    "React",
+    "rpg"
+  ],
+  "homepage": "https://github.com/edloidas/jetstream",
+  "bugs": {
+    "url": "https://github.com/edloidas/jetstream/issues",
+    "email": "edloidas@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mikita Taukachou",
+    "email": "edloidas@gmail.com",
+    "url": "http://edloidas.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edloidas/jetstream.git"
+  },
+  "scripts": {
+    "deploy": "gulp deploy",
+    "gulp": "gulp",
+    "development": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "gulp": "*",
+    "require-dir": "*",
+    "run-sequence": "*",
+    "del": "*",
+    "gulp-babel": "*"
+  },
+  "engines": {
+    "node": ">= 4.1.1",
+    "iojs": ">= 3.0.0",
+    "npm": ">= 2.14.4"
+  }
+}
