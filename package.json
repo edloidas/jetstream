@@ -35,6 +35,8 @@
     "require-dir": "*",
     "run-sequence": "*",
     "del": "*",
+    "path": "*",
+    "webpack": "*",
     "gulp-babel": "*"
   },
   "engines": {

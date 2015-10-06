@@ -10,9 +10,9 @@ import gulp from 'gulp';
 import runSequence from 'run-sequence';
 import requireDir from 'require-dir';
 
-import DIR from './gulp/path.babel.js';
+import CONFIG from './gulp/path.js';
 
-const TASKS = requireDir( DIR.gulpTasks, { recurse: true } );
+const TASKS = requireDir( CONFIG.gulpTasks, { recurse: true } );
 
 // Common tasks
 
