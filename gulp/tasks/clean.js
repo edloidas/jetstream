@@ -1,8 +1,8 @@
 import gulp from 'gulp';
-import del from 'del';
+import del  from 'del';
 
-import CONFIG from '../path.js';
+import CONFIG from '../config';
 
 gulp.task( 'clean', () => {
-	return del( [ `${CONFIG.root.dest}` ] );
+	return del( [ CONFIG.root.dest ] );
 });
