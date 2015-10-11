@@ -60,10 +60,10 @@
     "postcss-discard-comments": "*",
     "gulp-sourcemaps": "*",
     "mocha": "*",
-		"should": "*",
-		"coveralls": "*",
-		"mocha-lcov-reporter": "*",
-		"istanbul": "*",
+    "should": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*",
+    "istanbul": "*",
     "tern": "*"
   },
   "engines": {
