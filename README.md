@@ -35,6 +35,7 @@ A simple project template, based on Gulp and other tools.
 * Tools description
 * Mocha tests
 * Yeoman integration
+* JSLint and JSHint Gulp tasks
 * Installation and Usage section details
 
 ## Installation ##
