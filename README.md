@@ -37,6 +37,7 @@ A simple project template, based on Gulp and other tools.
 * Yeoman integration
 * JSLint and JSHint Gulp tasks
 * Installation and Usage section details
+* Add Gulp Plumber support
 
 ## Installation ##
 
