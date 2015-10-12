@@ -23,9 +23,9 @@
 		"url": "https://github.com/edloidas/jetstream.git"
 	},
 	"scripts": {
-		"deploy": "gulp deploy",
 		"gulp": "gulp",
-		"development": "gulp"
+		"development": "gulp",
+		"production": "gulp build:production"
 	},
 	"dependencies": {},
 	"devDependencies": {

@@ -8,7 +8,8 @@ export default ( env ) => {
 	let jsSrc = path.resolve( CONFIG.root.src, CONFIG.tasks.js.src );
 	let jsDest = path.resolve( CONFIG.root.dest, CONFIG.tasks.js.dest );
 	let publicPath = path.join( CONFIG.tasks.js.src, '/' );
-	let filenamePattern = env === 'production' ? '[name]-[hash].js' : '[name].js';
+	// Use '[name]-[hash].js' for production instead
+	let filenamePattern = env === 'production' ? '[name].js' : '[name].js';
 	let extensions = CONFIG.tasks.js.extensions.map( ( extension ) => {
 		return '.' + extension;
 	});
