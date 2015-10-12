@@ -5,7 +5,8 @@ export default ( publicPath, dest, filename ) => {
 	filename = filename || 'rev-manifest.json';
 
 	return () => {
-		this.plugin('done', ( stats ) => {
+		let self = this || global;
+		self.plugin('done', ( stats ) => {
 			let stat     = stats.toJson();
 			let chunks   = stats.assetsByChunkName;
 			let manifest = {};
