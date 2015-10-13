@@ -1,11 +1,12 @@
 {
 	"name": "jetstream",
 	"version": "0.0.1",
-	"description": "An RPG-style character editor",
+	"description": "A Gulp project template",
 	"keywords": [
 		"jetstream",
-		"React",
-		"rpg"
+		"template",
+		"gulp",
+		"webpack"
 	],
 	"homepage": "https://github.com/edloidas/jetstream",
 	"bugs": {
