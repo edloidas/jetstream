@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import del  from 'del';
+import del from 'del';
 
 import CONFIG from '../config';
 

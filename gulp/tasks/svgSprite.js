@@ -1,13 +1,13 @@
-import CONFIG      from '../config';
+import CONFIG from '../config';
 
-import gulp        from 'gulp';
+import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import svgstore    from 'gulp-svgstore';
-import imagemin    from 'gulp-imagemin';
-import path        from 'path';
+import svgstore from 'gulp-svgstore';
+import imagemin from 'gulp-imagemin';
+import path from 'path';
 
-let paths = {
-	src:  path.join( CONFIG.root.src, CONFIG.tasks.svgSprite.src, '/*.svg' ),
+const paths = {
+	src: path.join( CONFIG.root.src, CONFIG.tasks.svgSprite.src, '/*.svg' ),
 	dest: path.join( CONFIG.root.dest, CONFIG.tasks.svgSprite.dest ),
 };
 

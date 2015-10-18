@@ -1,19 +1,21 @@
 import path from 'path';
-import fs   from 'fs';
+import fs from 'fs';
 
-export default ( publicPath, dest, filename ) => {
-	filename = filename || 'rev-manifest.json';
+export default ( publicPath, dest, name ) => {
+	const filename = name || 'rev-manifest.json';
 
 	return () => {
-		let self = this || global;
+		const self = this || global;
 		self.plugin('done', ( stats ) => {
-			let stat     = stats.toJson();
-			let chunks   = stats.assetsByChunkName;
-			let manifest = {};
+			// const stat = stats.toJson();
+			const chunks = stats.assetsByChunkName;
+			const manifest = {};
 
-			for ( let key in chunks ) {
-				let originalFilename = key + '.js';
-				manifest[ path.join( publicPath, originalFilename ) ] = path.join( publicPath, chunks[ key ] );
+			for ( const key in chunks ) {
+				if ( chunks.hasOwnProperty( key ) ) {
+					const originalFilename = key + '.js';
+					manifest[ path.join( publicPath, originalFilename ) ] = path.join( publicPath, chunks[ key ] );
+				}
 			}
 
 			fs.writeFileSync(

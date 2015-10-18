@@ -6,10 +6,8 @@
 
 */
 
-import gulp        from 'gulp';
-import runSequence from 'run-sequence';
-import requireDir  from 'require-dir';
+import requireDir from 'require-dir';
 
 import CONFIG from './gulp/config';
 
-const TASKS = requireDir( CONFIG.gulpTasks, { recurse: true } );
+requireDir( CONFIG.gulpTasks, { recurse: true } );

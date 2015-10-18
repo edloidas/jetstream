@@ -1,9 +1,8 @@
-import gulpUtil     from 'gulp-util';
+import gulpUtil from 'gulp-util';
 import prettifyTime from './prettifyTime';
 import handleErrors from './handleErrors';
 
 export default ( err, stats ) => {
-
 	if ( err ) throw new gulpUtil.PluginError( 'webpack', err );
 
 	let statColor = stats.compilation.warnings.length < 1 ? 'green' : 'yellow';
@@ -14,7 +13,7 @@ export default ( err, stats ) => {
 			statColor = 'red';
 		});
 	} else {
-		let compileTime = prettifyTime( stats.endTime - stats.startTime );
+		const compileTime = prettifyTime( stats.endTime - stats.startTime );
 		gulpUtil.log( gulpUtil.colors[ statColor ]( stats ) );
 		gulpUtil.log( 'Compiled with', gulpUtil.colors.cyan( 'webpack:development' ), 'in', gulpUtil.colors.magenta( compileTime ) );
 	}

@@ -32,6 +32,12 @@
 	"devDependencies": {
 		"babel": "*",
 		"babel-core": "*",
+		"babel-loader": "*",
+
+		"webpack": "*",
+
+		"lodash": "*",
+
 		"gulp": "*",
 		"gulp-babel": "*",
 		"gulp-util": "*",
@@ -48,24 +54,33 @@
 		"del": "*",
 		"path": "*",
 		"fs": "*",
-		"webpack": "*",
-		"babel-loader": "*",
-		"browser-sync": "*",
-		"lodash": "*",
+
 		"gulp-postcss": "*",
 		"postcss-import": "*",
+		"postcss-mixins": "*",
+		"postcss-simple-vars": "*",
 		"postcss-nested": "*",
+		"postcss-calc": "*",
 		"autoprefixer": "*",
 		"css-mqpacker": "*",
 		"csswring": "*",
 		"postcss-discard-comments": "*",
 		"gulp-sourcemaps": "*",
+
+		"browser-sync": "*",
+
 		"mocha": "*",
 		"should": "*",
 		"coveralls": "*",
 		"mocha-lcov-reporter": "*",
 		"istanbul": "*",
-		"tern": "*"
+
+		"tern": "*",
+
+		"eslint": "*",
+		"eslint-plugin-react": "*",
+		"babel-eslint": "*",
+		"eslint-config-airbnb": "*"
 	},
 	"engines": {
 		"node": ">= 4.1.1",

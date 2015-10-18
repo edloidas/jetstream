@@ -1,24 +1,24 @@
-import CONFIG          from '../config';
+import CONFIG from '../config';
 
-import path            from 'path';
-import webpack         from 'webpack';
+import path from 'path';
+import webpack from 'webpack';
 import webpackManifest from './webpackManifest';
 
 export default ( env ) => {
-	let jsSrc = path.resolve( CONFIG.root.src, CONFIG.tasks.js.src );
-	let jsDest = path.resolve( CONFIG.root.dest, CONFIG.tasks.js.dest );
-	let publicPath = path.join( CONFIG.tasks.js.src, '/' );
+	const jsSrc = path.resolve( CONFIG.root.src, CONFIG.tasks.js.src );
+	const jsDest = path.resolve( CONFIG.root.dest, CONFIG.tasks.js.dest );
+	const publicPath = path.join( CONFIG.tasks.js.src, '/' );
 	// Use '[name]-[hash].js' for production instead
-	let filenamePattern = env === 'production' ? '[name].js' : '[name].js';
-	let extensions = CONFIG.tasks.js.extensions.map( ( extension ) => {
+	const filenamePattern = env === 'production' ? '[name].js' : '[name].js';
+	const extensions = CONFIG.tasks.js.extensions.map( ( extension ) => {
 		return '.' + extension;
 	});
 
-	let webpackConfig = {
+	const webpackConfig = {
 		context: jsSrc,
 		plugins: [],
 		resolve: {
-			extensions: [ '' ].concat( extensions )
+			extensions: [ '' ].concat( extensions ),
 		},
 		module: {
 			loaders: [
@@ -26,20 +26,20 @@ export default ( env ) => {
 					test: /\.js$/,
 					exclude: /node_modules/,
 					loader: 'babel-loader',
-					query: { stage: 0 }
-				}
-			]
-		}
+					query: { stage: 0 },
+				},
+			],
+		},
 	};
 
 	if ( env !== 'test' ) {
 		// Test engine doesn't need entry points or output settings
 		webpackConfig.entry = CONFIG.tasks.js.entries;
 
-		webpackConfig.output= {
+		webpackConfig.output = {
 			path: path.normalize( jsDest ),
 			filename: filenamePattern,
-			publicPath: publicPath
+			publicPath: publicPath,
 		};
 
 		if ( CONFIG.tasks.js.extractSharedJs ) {
@@ -54,7 +54,7 @@ export default ( env ) => {
 	}
 
 	if ( env === 'development' ) {
-		// webpackConfig.devtool = 'source-map';
+		webpackConfig.devtool = 'source-map';
 		webpack.debug = true;
 	}
 
@@ -63,8 +63,8 @@ export default ( env ) => {
 			// new webpackManifest( publicPath, CONFIG.root.dest ),
 			new webpack.DefinePlugin({
 				'process.env': {
-					'NODE_ENV': JSON.stringify( 'production' )
-				}
+					'NODE_ENV': JSON.stringify( 'production' ),
+				},
 			}),
 			new webpack.optimize.DedupePlugin(),
 			new webpack.optimize.UglifyJsPlugin(),

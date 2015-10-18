@@ -1,16 +1,16 @@
-import CONFIG      from '../config';
+import CONFIG from '../config';
 
-import gulp        from 'gulp';
+import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import path        from 'path';
+import path from 'path';
 
-let settings = {
+const settings = {
 	server: {
-		baseDir: path.resolve( CONFIG.root.dest, CONFIG.tasks.html.dest )
-	}
+		baseDir: path.resolve( CONFIG.root.dest, CONFIG.tasks.html.dest ),
+	},
 };
 
-if( CONFIG.tasks.html.watchOnly ) {
+if ( CONFIG.tasks.html.watchOnly ) {
 	settings.files = CONFIG.tasks.html.watchOnly;
 }
 

@@ -1,14 +1,14 @@
-import CONFIG      from '../config';
+import CONFIG from '../config';
 
-import gulp        from 'gulp';
+import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import changed     from 'gulp-changed';
-import imagemin    from 'gulp-imagemin';
-import path        from 'path';
+import changed from 'gulp-changed';
+import imagemin from 'gulp-imagemin';
+import path from 'path';
 
-var paths = {
-	src:  path.join( CONFIG.root.src, CONFIG.tasks.images.src, '/**' ),
-	dest: path.join( CONFIG.root.dest, CONFIG.tasks.images.dest )
+const paths = {
+	src: path.join( CONFIG.root.src, CONFIG.tasks.images.src, '/**' ),
+	dest: path.join( CONFIG.root.dest, CONFIG.tasks.images.dest ),
 };
 
 gulp.task( 'images', () => {

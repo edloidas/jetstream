@@ -27,15 +27,18 @@ A simple project template, based on Gulp and other tools.
 ##### Tools #####
 * [Tern](http://ternjs.net/)
 * [JSHint](http://jshint.com/)
+* [ESLint](http://eslint.org/)
+* [CSSComb](http://csscomb.com/)
 
 :heart: Inspired by the  [Gulp Starter](https://github.com/vigetlabs/gulp-starter).
 
 ## TODO ##
 
+* Fix PostCSS gulp errors handler
 * Tools description
 * Mocha tests
 * Yeoman integration
-* JSLint and JSHint Gulp tasks
+* ESLint and JSHint Gulp tasks
 * Installation and Usage section details
 * Add Gulp Plumber support
 
