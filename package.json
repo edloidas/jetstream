@@ -26,7 +26,8 @@
 	"scripts": {
 		"gulp": "gulp",
 		"development": "gulp",
-		"production": "gulp build:production"
+		"production": "gulp build:production",
+		"test": "node_modules/.bin/mocha"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -83,8 +84,7 @@
 		"eslint-config-airbnb": "*"
 	},
 	"engines": {
-		"node": ">= 4.1.1",
-		"iojs": ">= 3.0.0",
-		"npm": ">= 2.14.4"
+		"node": ">= 4.2.1",
+		"npm": ">= 3.3.9"
 	}
 }
