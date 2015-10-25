@@ -43,5 +43,5 @@ gulp.task( 'css', () => {
 		.on( 'error', handleErrors )
 		.pipe( sourcemaps.write() )
 		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.reload( { stream: true } ) );
+		.pipe( browserSync.stream() );
 });

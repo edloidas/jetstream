@@ -19,5 +19,5 @@ gulp.task( 'html', () => {
 	return gulp.src( paths.src )
 		.pipe( gulpif( process.env.NODE_ENV === 'production', htmlmin( CONFIG.tasks.html.htmlmin ) ) )
 		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.reload( { stream: true } ) );
+		.pipe( browserSync.stream() );
 });

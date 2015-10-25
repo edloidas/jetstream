@@ -14,5 +14,5 @@ gulp.task( 'fonts', () => {
 	return gulp.src( paths.src )
 		.pipe( changed( paths.dest ) ) // Ignore unchanged files
 		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.reload( { stream: true } ));
+		.pipe( browserSync.stream());
 });

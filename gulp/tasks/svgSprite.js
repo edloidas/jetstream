@@ -16,5 +16,5 @@ gulp.task( 'svgSprite', () => {
 		.pipe( imagemin() ) // Optimize
 		.pipe( svgstore() ) // Combine into one
 		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.reload( { stream: true } ) );
+		.pipe( browserSync.stream() );
 });
