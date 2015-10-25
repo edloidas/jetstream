@@ -34,18 +34,17 @@ A simple project template, based on Gulp and other tools.
 
 ## TODO ##
 
-* Fix PostCSS gulp errors handler
 * Tools description
-* Mocha tests
 * Yeoman integration
 * ESLint and JSHint Gulp tasks
-* Installation and Usage section details
-* Add Gulp Plumber support
-
-## Installation ##
-
-> TODO
 
 ## Usage ##
 
-> TODO
+Clone this repo, remove the git configuration and replace with your own.
+
+```shell
+$ git clone --depth 1 https://github.com/edloidas/jetstream.git PROJECT
+$ cd PROJECT
+$ rm -r .git
+$ npm install
+```

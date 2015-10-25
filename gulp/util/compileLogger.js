@@ -18,3 +18,9 @@ export default ( err, stats ) => {
 		gulpUtil.log( 'Compiled with', gulpUtil.colors.cyan( 'webpack:development' ), 'in', gulpUtil.colors.magenta( compileTime ) );
 	}
 };
+
+export function postcssError( callback, err ) {
+	handleErrors( `Error in plugin [${ err.plugin || 'gulp-postcss' }]` );
+	gulpUtil.log( gulpUtil.colors.red( err.message ) );
+	return callback();
+}
