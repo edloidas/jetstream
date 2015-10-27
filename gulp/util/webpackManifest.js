@@ -5,8 +5,8 @@ export default ( publicPath, dest, name ) => {
 	const filename = name || 'rev-manifest.json';
 
 	return () => {
-		const self = this || global;
-		self.plugin('done', ( stats ) => {
+		const context = this || global;
+		context.plugin('done', ( stats ) => {
 			// const stat = stats.toJson();
 			const chunks = stats.assetsByChunkName;
 			const manifest = {};
