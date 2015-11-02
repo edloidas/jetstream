@@ -26,7 +26,6 @@ A simple project template, based on Gulp and other tools.
 
 ##### Tools #####
 * [Tern](http://ternjs.net/)
-* [JSHint](http://jshint.com/)
 * [ESLint](http://eslint.org/)
 * [CSSComb](http://csscomb.com/)
 
