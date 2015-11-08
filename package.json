@@ -31,7 +31,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel": "*",
+    "babel-cli": "*",
     "babel-core": "*",
     "babel-loader": "*",
     "babel-preset-es2015": "*",
@@ -53,8 +53,11 @@
     "gulp-htmlmin": "*",
     "gulp-imagemin": "*",
     "gulp-svgstore": "*",
+    "gulp-sourcemaps": "*",
+
     "require-dir": "*",
     "run-sequence": "*",
+
     "del": "*",
     "path": "*",
     "fs": "*",
@@ -69,7 +72,6 @@
     "css-mqpacker": "*",
     "csswring": "*",
     "postcss-discard-comments": "*",
-    "gulp-sourcemaps": "*",
 
     "browser-sync": "*",
 

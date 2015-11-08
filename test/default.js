@@ -1,6 +1,6 @@
 const should = require( 'should' );
 
-const babel = require( 'babel' );
+const babel = require( 'babel-core' );
 
 // Just a dummy test for now
 describe( 'default', () => {
