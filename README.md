@@ -33,6 +33,8 @@ A simple project template, based on Gulp and other tools.
 
 ## TODO ##
 
+* Add `babel-plugin-react-transform` and plugins support
+* Integrate `BrowserSync` and `Webpack`
 * Tools description
 * Yeoman integration
 * ESLint and JSHint Gulp tasks
