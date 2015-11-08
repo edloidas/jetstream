@@ -7,14 +7,16 @@ import imagemin from 'gulp-imagemin';
 import path from 'path';
 
 const paths = {
-	src: path.join( CONFIG.root.src, CONFIG.tasks.images.src, '/**' ),
-	dest: path.join( CONFIG.root.dest, CONFIG.tasks.images.dest ),
+  src: path.join( CONFIG.root.src, CONFIG.tasks.images.src, '/**' ),
+  dest: path.join( CONFIG.root.dest, CONFIG.tasks.images.dest ),
 };
 
 gulp.task( 'images', () => {
-	return gulp.src( paths.src )
-		.pipe( changed( paths.dest ) ) // Ignore unchanged files
-		.pipe( imagemin() )            // Optimize
-		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.stream() );
+  return gulp.src( paths.src )
+    // Ignore unchanged files
+    .pipe( changed( paths.dest ))
+    // Optimize
+    .pipe( imagemin())
+    .pipe( gulp.dest( paths.dest ))
+    .pipe( browserSync.stream());
 });

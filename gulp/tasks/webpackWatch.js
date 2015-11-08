@@ -5,15 +5,15 @@ import browserSync from 'browser-sync';
 import webpackConfig from '../util/webpackMultiConfig';
 
 gulp.task( 'webpack:watch', ( callback ) => {
-	let initialCompile = false;
+  let initialCompile = false;
 
-	webpack( webpackConfig( 'development' ) ).watch( 300, ( err, stats ) => {
-		logger( err, stats );
-		browserSync.reload();
-		// On the initial compile, let gulp know the task is done
-		if ( !initialCompile ) {
-			initialCompile = true;
-			callback();
-		}
-	});
+  webpack( webpackConfig( 'development' )).watch( 300, ( err, stats ) => {
+    logger( err, stats );
+    browserSync.reload();
+    // On the initial compile, let gulp know the task is done
+    if ( !initialCompile ) {
+      initialCompile = true;
+      callback();
+    }
+  });
 });

@@ -1,93 +1,93 @@
 {
-	"name": "jetstream",
-	"version": "0.0.1",
-	"description": "A Gulp project template",
-	"keywords": [
-		"jetstream",
-		"template",
-		"gulp",
-		"webpack"
-	],
-	"homepage": "https://github.com/edloidas/jetstream",
-	"bugs": {
-		"url": "https://github.com/edloidas/jetstream/issues",
-		"email": "edloidas@gmail.com"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Mikita Taukachou",
-		"email": "edloidas@gmail.com",
-		"url": "http://edloidas.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/edloidas/jetstream.git"
-	},
-	"scripts": {
-		"gulp": "gulp",
-		"development": "gulp",
-		"production": "gulp build:production",
-		"test": "node_modules/.bin/mocha"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"babel": "*",
-		"babel-core": "*",
-		"babel-loader": "*",
-		"babel-preset-es2015": "*",
-		"babel-preset-react": "*",
-		"babel-preset-stage-0": "*",
+  "name": "jetstream",
+  "version": "0.0.1",
+  "description": "A Gulp project template",
+  "keywords": [
+    "jetstream",
+    "template",
+    "gulp",
+    "webpack"
+  ],
+  "homepage": "https://github.com/edloidas/jetstream",
+  "bugs": {
+    "url": "https://github.com/edloidas/jetstream/issues",
+    "email": "edloidas@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mikita Taukachou",
+    "email": "edloidas@gmail.com",
+    "url": "http://edloidas.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edloidas/jetstream.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "development": "gulp",
+    "production": "gulp build:production",
+    "test": "node_modules/.bin/mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
 
-		"webpack": "*",
+    "webpack": "*",
 
-		"lodash": "*",
+    "lodash": "*",
 
-		"gulp": "*",
-		"gulp-babel": "*",
-		"gulp-util": "*",
-		"gulp-notify": "*",
-		"gulp-sequence": "*",
-		"gulp-watch": "*",
-		"gulp-changed": "*",
-		"gulp-if": "*",
-		"gulp-htmlmin": "*",
-		"gulp-imagemin": "*",
-		"gulp-svgstore": "*",
-		"require-dir": "*",
-		"run-sequence": "*",
-		"del": "*",
-		"path": "*",
-		"fs": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-util": "*",
+    "gulp-notify": "*",
+    "gulp-sequence": "*",
+    "gulp-watch": "*",
+    "gulp-changed": "*",
+    "gulp-if": "*",
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-svgstore": "*",
+    "require-dir": "*",
+    "run-sequence": "*",
+    "del": "*",
+    "path": "*",
+    "fs": "*",
 
-		"gulp-postcss": "*",
-		"postcss-import": "*",
-		"postcss-mixins": "*",
-		"postcss-simple-vars": "*",
-		"postcss-nested": "*",
-		"postcss-calc": "*",
-		"autoprefixer": "*",
-		"css-mqpacker": "*",
-		"csswring": "*",
-		"postcss-discard-comments": "*",
-		"gulp-sourcemaps": "*",
+    "gulp-postcss": "*",
+    "postcss-import": "*",
+    "postcss-mixins": "*",
+    "postcss-simple-vars": "*",
+    "postcss-nested": "*",
+    "postcss-calc": "*",
+    "autoprefixer": "*",
+    "css-mqpacker": "*",
+    "csswring": "*",
+    "postcss-discard-comments": "*",
+    "gulp-sourcemaps": "*",
 
-		"browser-sync": "*",
+    "browser-sync": "*",
 
-		"mocha": "*",
-		"should": "*",
-		"coveralls": "*",
-		"mocha-lcov-reporter": "*",
-		"istanbul": "*",
+    "mocha": "*",
+    "should": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*",
+    "istanbul": "*",
 
-		"tern": "*",
+    "tern": "*",
 
-		"eslint": "*",
-		"eslint-plugin-react": "*",
-		"babel-eslint": "*",
-		"eslint-config-airbnb": "*"
-	},
-	"engines": {
-		"node": ">= 4.2.1",
-		"npm": ">= 3.3.9"
-	}
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "babel-eslint": "*",
+    "eslint-config-airbnb": "*"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3.3.9"
+  }
 }

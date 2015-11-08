@@ -7,14 +7,16 @@ import imagemin from 'gulp-imagemin';
 import path from 'path';
 
 const paths = {
-	src: path.join( CONFIG.root.src, CONFIG.tasks.svgSprite.src, '/*.svg' ),
-	dest: path.join( CONFIG.root.dest, CONFIG.tasks.svgSprite.dest ),
+  src: path.join( CONFIG.root.src, CONFIG.tasks.svgSprite.src, '/*.svg' ),
+  dest: path.join( CONFIG.root.dest, CONFIG.tasks.svgSprite.dest ),
 };
 
 gulp.task( 'svgSprite', () => {
-	return gulp.src( paths.src )
-		.pipe( imagemin() ) // Optimize
-		.pipe( svgstore() ) // Combine into one
-		.pipe( gulp.dest( paths.dest ) )
-		.pipe( browserSync.stream() );
+  return gulp.src( paths.src )
+    // Optimize
+    .pipe( imagemin())
+    // Combine into one
+    .pipe( svgstore())
+    .pipe( gulp.dest( paths.dest ))
+    .pipe( browserSync.stream());
 });
