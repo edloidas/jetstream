@@ -3,7 +3,7 @@
 language: node_js
 env: TRAVIS_CI=true
 
-branches:
+#branches:
 #  except:
 #    - gh-pages
 

@@ -8,7 +8,7 @@ version: "{build}"
 build: off
 deploy: off
 
-branches:
+#branches:
 #  except:
 #    - gh-pages
 
@@ -18,6 +18,6 @@ install:
 
 test_script:
   - node --version
-  - npm --version 
+  - npm --version
   - ps: "npm test # PowerShell"
   - cmd: "npm test"
