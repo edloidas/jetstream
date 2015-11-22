@@ -37,6 +37,8 @@
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
     "babel-preset-stage-0": "*",
+    "babel-plugin-syntax-class-properties": "*",
+    "babel-plugin-transform-class-properties": "*",
 
     "webpack": "*",
 
@@ -89,7 +91,7 @@
     "eslint-config-airbnb": "*"
   },
   "engines": {
-    "node": ">= 4.2.1",
-    "npm": ">= 3.3.9"
+    "node": ">= 5.1.0",
+    "npm": ">= 3.3.12"
   }
 }
