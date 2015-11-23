@@ -2,12 +2,11 @@ import CONFIG from '../config';
 
 import path from 'path';
 import webpack from 'webpack';
-// import webpackManifest from './webpackManifest';
 
 export default ( env ) => {
   const jsSrc = path.resolve( CONFIG.root.src, CONFIG.tasks.js.src );
   const jsDest = path.resolve( CONFIG.root.dest, CONFIG.tasks.js.dest );
-  const publicPath = path.join( CONFIG.tasks.js.src, '/' );
+  const publicPath = path.join( CONFIG.tasks.js.dest, '/' );
   // Use '[name]-[hash].js' for production instead
   const filenamePattern = env === 'production' ? '[name].js' : '[name].js';
   const extensions = CONFIG.tasks.js.extensions.map(( extension ) => {
@@ -62,7 +61,6 @@ export default ( env ) => {
 
   if ( env === 'production' ) {
     webpackConfig.plugins.push(
-      // new webpackManifest( publicPath, CONFIG.root.dest ),
       new webpack.DefinePlugin({
         'process.env': {
           'NODE_ENV': JSON.stringify( 'production' ),
