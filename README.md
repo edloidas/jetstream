@@ -12,6 +12,7 @@ A simple project template, based on Gulp and other tools.
 * [Gulp](http://gulpjs.com/)
 * [webpack](https://webpack.github.io/)
 * [Babel](https://babeljs.io/)
+* [Jade](http://jade-lang.com/)
 * [PostCSS](https://github.com/postcss/postcss)
 * [Browsersync](http://www.browsersync.io/)
 
