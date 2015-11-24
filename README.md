@@ -33,7 +33,6 @@ A simple project template, based on Gulp and other tools.
 
 ## TODO ##
 
-* Add `Jade` template engine
 * Add `babel-plugin-react-transform` and plugins support
 * Integrate `BrowserSync` and `Webpack`
 * Tools description

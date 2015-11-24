@@ -52,10 +52,7 @@
     "gulp-watch": "*",
     "gulp-changed": "*",
     "gulp-if": "*",
-    "gulp-htmlmin": "*",
-    "gulp-imagemin": "*",
-    "gulp-svgstore": "*",
-    "gulp-sourcemaps": "*",
+    "gulp-data": "*",
 
     "require-dir": "*",
     "run-sequence": "*",
@@ -63,6 +60,9 @@
     "del": "*",
     "path": "*",
     "fs": "*",
+
+    "gulp-jade": "*",
+    "gulp-htmlmin": "*",
 
     "gulp-postcss": "*",
     "postcss-import": "*",
@@ -74,6 +74,10 @@
     "css-mqpacker": "*",
     "csswring": "*",
     "postcss-discard-comments": "*",
+    "gulp-sourcemaps": "*",
+
+    "gulp-imagemin": "*",
+    "gulp-svgstore": "*",
 
     "browser-sync": "*",
 

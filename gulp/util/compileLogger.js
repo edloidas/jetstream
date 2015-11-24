@@ -19,7 +19,7 @@ export default ( err, stats ) => {
   }
 };
 
-export function postcssError( callback, err ) {
+export function commonError( callback, err ) {
   handleErrors( `Error in plugin [${ err.plugin || 'gulp-postcss' }]` );
   gulpUtil.log( gulpUtil.colors.red( err.message ));
   return callback();
