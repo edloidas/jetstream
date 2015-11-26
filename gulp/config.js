@@ -29,6 +29,7 @@ const CONFIG = {
       htmlmin: {
         collapseWhitespace: true,
       },
+      useJade: true,
       dataFile: 'data/global.json',
       extensions: [ 'html', 'json', 'xml', 'jade' ],
       excludeFolders: [ 'shared', 'data' ],

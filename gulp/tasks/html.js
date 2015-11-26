@@ -26,9 +26,9 @@ const getData = () => {
 
 gulp.task( 'html', ( cb ) => {
   return gulp.src( paths.src )
-    .pipe( data( getData ))
+    .pipe( gulpif( CONFIG.tasks.html.useJade, data( getData )))
     .on( 'error', logger.bind( null, cb ))
-    .pipe( jade())
+    .pipe( gulpif( CONFIG.tasks.html.useJade, jade()))
     .on( 'error', logger.bind( null, cb ))
     .pipe( gulpif( process.env.NODE_ENV === 'production', htmlmin( CONFIG.tasks.html.htmlmin )))
     .pipe( gulp.dest( paths.dest ))
