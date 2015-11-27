@@ -72,7 +72,7 @@
     "postcss-calc": "*",
     "autoprefixer": "*",
     "css-mqpacker": "*",
-    "csswring": "*",
+    "cssnano": "*",
     "postcss-discard-comments": "*",
     "gulp-sourcemaps": "*",
 

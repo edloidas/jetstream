@@ -11,7 +11,7 @@ import nested from 'postcss-nested';
 import calc from 'postcss-calc';
 import autoprefixer from 'autoprefixer';
 import mqpacker from 'css-mqpacker';
-import csswring from 'csswring';
+import cssnano from 'cssnano';
 import comments from 'postcss-discard-comments';
 import path from 'path';
 import { commonError as logger } from '../util/compileLogger';
@@ -32,7 +32,7 @@ const processors = [
   calc,
   autoprefixer( CONFIG.tasks.css.autoprefixer ),
   mqpacker,
-  csswring,
+  cssnano,
   comments,
 ];
 
