@@ -14,11 +14,7 @@
     "email": "edloidas@gmail.com"
   },
   "license": "MIT",
-  "author": {
-    "name": "Mikita Taukachou",
-    "email": "edloidas@gmail.com",
-    "url": "http://edloidas.com"
-  },
+  "author": "Mikita Taukachou <edloidas@gmail.com> (http://edloidas.com)",
   "repository": {
     "type": "git",
     "url": "https://github.com/edloidas/jetstream.git"

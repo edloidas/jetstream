@@ -47,7 +47,7 @@ const CONFIG = {
     svgSprite: {
       src: 'sprites',
       dest: 'images',
-      extensions: ['svg'],
+      extensions: [ 'svg' ],
     },
   },
 };

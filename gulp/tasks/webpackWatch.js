@@ -4,7 +4,7 @@ import webpack from 'webpack';
 import browserSync from 'browser-sync';
 import webpackConfig from '../util/webpackMultiConfig';
 
-gulp.task( 'webpack:watch', ( callback ) => {
+gulp.task( 'webpack:watch', ( cb ) => {
   let initialCompile = false;
 
   webpack( webpackConfig( 'development' )).watch( 300, ( err, stats ) => {
@@ -13,7 +13,7 @@ gulp.task( 'webpack:watch', ( callback ) => {
     // On the initial compile, let gulp know the task is done
     if ( !initialCompile ) {
       initialCompile = true;
-      callback();
+      cb();
     }
   });
 });
