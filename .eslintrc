@@ -5,6 +5,7 @@
     "space-before-function-paren": [ 2, { "anonymous": "always", "named": "never" } ],
     "space-in-parens": [ 2, "always", { "exceptions": [ "{}", "[]", "()" ] } ],
     "spaced-comment": [ 2, "always", { "exceptions": [ "-", "+" ] } ],
-    "arrow-spacing": [ 2, { "before": true, "after": true } ]
+    "arrow-spacing": [ 2, { "before": true, "after": true } ],
+    "array-bracket-spacing": [ 2, "always" ]
   }
 }
