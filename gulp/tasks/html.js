@@ -19,10 +19,10 @@ const paths = {
   dest: path.join( CONFIG.root.dest, CONFIG.tasks.html.dest ),
 };
 
-const getData = () => {
+function getData() {
   const dataPath = path.resolve( CONFIG.root.src, CONFIG.tasks.html.src, CONFIG.tasks.html.dataFile );
   return JSON.parse( fs.readFileSync( dataPath, 'utf8' ));
-};
+}
 
 gulp.task( 'html', ( cb ) => {
   return gulp.src( paths.src )

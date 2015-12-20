@@ -40,7 +40,7 @@ export default ( env ) => {
     webpackConfig.output = {
       path: path.normalize( jsDest ),
       filename: filenamePattern,
-      publicPath: publicPath,
+      publicPath,
     };
 
     if ( CONFIG.tasks.js.extractSharedJs ) {

@@ -49,6 +49,10 @@ const CONFIG = {
       dest: 'images',
       extensions: [ 'svg' ],
     },
+    clean: {
+      dest: [ 'js', 'styles' ],
+      cleanDot: true,
+    },
   },
 };
 

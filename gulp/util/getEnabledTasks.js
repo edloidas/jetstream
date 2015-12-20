@@ -12,7 +12,7 @@ export default ( env ) => {
     production: 'webpack:production',
   };
 
-  const matchFilter = ( task ) => {
+  function matchFilter( task ) {
     if ( CONFIG.tasks[ task ]) {
       let filteredTask = task;
       if ( task === 'js' ) {
@@ -20,7 +20,7 @@ export default ( env ) => {
       }
       return filteredTask;
     }
-  };
+  }
 
   return {
     assetTasks: compact( assetTasks.map( matchFilter )),
