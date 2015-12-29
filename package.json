@@ -1,11 +1,12 @@
 {
   "name": "jetstream",
-  "version": "1.1.0",
-  "description": "A Gulp project template",
+  "version": "2.0.0",
+  "description": "An ultimate webpack boilerplate",
   "keywords": [
     "jetstream",
     "template",
-    "gulp",
+    "templaboilerplatete",
+    "npm",
     "webpack"
   ],
   "homepage": "https://github.com/edloidas/jetstream",
