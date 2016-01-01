@@ -4,12 +4,11 @@ Jetstream
 [![Dependency Status](https://david-dm.org/edloidas/jetstream.svg)](https://david-dm.org/edloidas/jetstream)
 [![devDependency Status](https://david-dm.org/edloidas/jetstream/dev-status.svg)](https://david-dm.org/edloidas/jetstream#info=devDependencies)
 
-> A Gulp project template.
+> An ultimate webpack boilerplate.
 
-A simple project template, based on Gulp and other tools.
+A complex project template, based on webpack and other tools.
 
 ##### Development #####
-* [Gulp](http://gulpjs.com/)
 * [webpack](https://webpack.github.io/)
 * [Babel](https://babeljs.io/)
 * [Jade](http://jade-lang.com/)
@@ -28,17 +27,13 @@ A simple project template, based on Gulp and other tools.
 ##### Tools #####
 * [Tern](http://ternjs.net/)
 * [ESLint](http://eslint.org/)
-* [CSSComb](http://csscomb.com/)
-
-:heart: Inspired by the  [Gulp Starter](https://github.com/vigetlabs/gulp-starter).
+* [Stylelint](https://github.com/stylelint/stylelint/)
 
 ## TODO ##
 
 * Add `babel-plugin-react-transform` and plugins support
 * Integrate `BrowserSync` and `Webpack`
 * Tools description
-* Yeoman integration
-* ESLint and JSHint Gulp tasks
 
 ## Usage ##
 
