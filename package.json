@@ -21,13 +21,16 @@
     "url": "https://github.com/edloidas/jetstream.git"
   },
   "scripts": {
-    "gulp": "gulp",
-    "development": "gulp",
-    "production": "gulp build:production",
-    "test": "node_modules/.bin/mocha"
+    "dev": "gulp",
+    "prod": "gulp build:production",
+    "test": "mocha",
+
+    "clean": "node scripts/clean.js"
   },
   "dependencies": {},
   "devDependencies": {
+    "npm-run-all": "*",
+
     "babel-cli": "*",
     "babel-core": "*",
     "babel-loader": "*",
