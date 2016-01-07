@@ -21,11 +21,11 @@
     "url": "https://github.com/edloidas/jetstream.git"
   },
   "scripts": {
-    "dev": "gulp",
-    "prod": "gulp build:production",
     "test": "mocha",
 
-    "clean": "node scripts/clean.js"
+    "clean": "node scripts/clean.js",
+
+    "prod": "npm run clean"
   },
   "dependencies": {},
   "devDependencies": {
@@ -95,7 +95,7 @@
     "eslint-config-airbnb": "*"
   },
   "engines": {
-    "node": ">= 5.1.0",
+    "node": ">= 5.4.0",
     "npm": ">= 3.3.12"
   }
 }
