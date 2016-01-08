@@ -11,9 +11,7 @@ function resolveCleanPaths() {
   return taskPath;
 }
 
-( function () {
-  const cleanPaths = resolveCleanPaths();
-  const cleanDot = CONFIG.tasks.clean.cleanDot;
+const cleanPaths = resolveCleanPaths();
+const cleanDot = CONFIG.tasks.clean.cleanDot;
 
-  return del( cleanPaths, { dot: cleanDot });
-})();
+del( cleanPaths, { dot: cleanDot });
