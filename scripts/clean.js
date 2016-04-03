@@ -2,7 +2,7 @@ const del = require( 'del' );
 
 const CONFIG = require( './config' );
 
-function resolveCleanPaths() {
+function resolvePathsToClean() {
   const taskPath = CONFIG.tasks.clean.dest;
   if ( !taskPath || !taskPath.length ) {
     return [ `${CONFIG.root.dest}/**/*` ];
@@ -11,7 +11,7 @@ function resolveCleanPaths() {
   return taskPath;
 }
 
-const cleanPaths = resolveCleanPaths();
-const cleanDot = CONFIG.tasks.clean.cleanDot;
+const pathsToClean = resolvePathsToClean();
+const dot = CONFIG.tasks.clean.dot;
 
-del( cleanPaths, { dot: cleanDot });
+del( pathsToClean, { dot });

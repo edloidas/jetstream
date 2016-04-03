@@ -51,7 +51,7 @@ const CONFIG = {
     },
     clean: {
       dest: [],
-      cleanDot: true,
+      dot: true,
     },
   },
 };
