@@ -51,7 +51,7 @@ const CONFIG = {
     },
     clean: {
       dest: [ 'js', 'styles' ],
-      cleanDot: true,
+      dot: true,
     },
   },
 };

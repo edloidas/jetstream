@@ -3,17 +3,17 @@ import del from 'del';
 
 import CONFIG from '../config';
 
-function resolveCleanPaths() {
+function resolvePathsToClean() {
   if ( !CONFIG.tasks.clean.dest ) {
-    return [ `${CONFIG.root.dest}/**/*` ];
+    return [ `${ CONFIG.root.dest }/**/*` ];
   }
 
   return CONFIG.tasks.clean.dest;
 }
 
-gulp.task( 'clean', ( cb ) => {
-  const cleanPaths = resolveCleanPaths();
-  const cleanDot = CONFIG.tasks.clean.cleanDot;
+gulp.task( 'clean', cb => {
+  const pathsToClean = resolvePathsToClean();
+  const dot = CONFIG.tasks.clean.dot;
 
-  return del( cleanPaths, { dot: cleanDot }, cb );
+  return del( pathsToClean, { dot }, cb );
 });

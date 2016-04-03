@@ -4,7 +4,7 @@ import webpack from 'webpack';
 import browserSync from 'browser-sync';
 import webpackConfig from '../util/webpackMultiConfig';
 
-gulp.task( 'webpack:watch', ( cb ) => {
+gulp.task( 'webpack:watch', cb => {
   let initialCompile = false;
 
   webpack( webpackConfig( 'development' )).watch( 300, ( err, stats ) => {

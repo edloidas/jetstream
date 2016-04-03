@@ -16,8 +16,12 @@ import comments from 'postcss-discard-comments';
 import path from 'path';
 import { commonError as logger } from '../util/compileLogger';
 
-const exclude = CONFIG.tasks.css.exclude.map(( pattern ) => ( '!' + path.join( CONFIG.root.src, CONFIG.tasks.css.src, `/**/${pattern}` )));
-const extensions = CONFIG.tasks.css.extensions.map(( ext ) => path.join( CONFIG.root.src, CONFIG.tasks.css.src, `/**/*.${ext}` ));
+const exclude = CONFIG.tasks.css.exclude.map(
+  pattern => `!${ path.join( CONFIG.root.src, CONFIG.tasks.css.src, `/**/${ pattern }` ) }`
+);
+const extensions = CONFIG.tasks.css.extensions.map(
+  ext => path.join( CONFIG.root.src, CONFIG.tasks.css.src, `/**/*.${ ext }` )
+);
 
 const paths = {
   src: extensions.concat( exclude ),
@@ -36,12 +40,12 @@ const processors = [
   comments,
 ];
 
-gulp.task( 'css', ( cb ) => {
-  return gulp.src( paths.src )
+gulp.task( 'css', cb =>
+  gulp.src( paths.src )
     .pipe( sourcemaps.init())
     .pipe( postcss( processors ))
     .on( 'error', logger.bind( null, cb ))
     .pipe( sourcemaps.write())
     .pipe( gulp.dest( paths.dest ))
-    .pipe( browserSync.stream());
-});
+    .pipe( browserSync.stream())
+);

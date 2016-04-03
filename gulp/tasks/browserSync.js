@@ -14,6 +14,4 @@ if ( CONFIG.tasks.html.watchOnly ) {
   settings.files = CONFIG.tasks.html.watchOnly;
 }
 
-gulp.task( 'browserSync', () => {
-  return browserSync( settings );
-});
+gulp.task( 'browserSync', () => browserSync( settings ));

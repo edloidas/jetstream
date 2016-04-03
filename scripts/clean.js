@@ -5,7 +5,7 @@ const CONFIG = require( './config' );
 function resolvePathsToClean() {
   const taskPath = CONFIG.tasks.clean.dest;
   if ( !taskPath || !taskPath.length ) {
-    return [ `${CONFIG.root.dest}/**/*` ];
+    return [ `${ CONFIG.root.dest }/**/*` ];
   }
 
   return taskPath;

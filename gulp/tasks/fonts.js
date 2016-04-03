@@ -10,10 +10,10 @@ const paths = {
   dest: path.join( CONFIG.root.dest, CONFIG.tasks.fonts.dest ),
 };
 
-gulp.task( 'fonts', () => {
-  return gulp.src( paths.src )
+gulp.task( 'fonts', () =>
+  gulp.src( paths.src )
     // Ignore unchanged files
     .pipe( changed( paths.dest ))
     .pipe( gulp.dest( paths.dest ))
-    .pipe( browserSync.stream());
-});
+    .pipe( browserSync.stream())
+);

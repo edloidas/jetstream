@@ -5,7 +5,7 @@ import compact from 'lodash/array/compact';
 const assetTasks = [ 'fonts', 'iconFont', 'images', 'svgSprite' ];
 const codeTasks = [ 'html', 'css', 'js' ];
 
-export default ( env ) => {
+export default env => {
   const jsTasks = {
     watch: 'webpack:watch',
     development: 'webpack:development',
@@ -20,6 +20,8 @@ export default ( env ) => {
       }
       return filteredTask;
     }
+
+    return null;
   }
 
   return {

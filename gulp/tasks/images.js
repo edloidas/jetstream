@@ -11,12 +11,12 @@ const paths = {
   dest: path.join( CONFIG.root.dest, CONFIG.tasks.images.dest ),
 };
 
-gulp.task( 'images', () => {
-  return gulp.src( paths.src )
+gulp.task( 'images', () =>
+  gulp.src( paths.src )
     // Ignore unchanged files
     .pipe( changed( paths.dest ))
     // Optimize
     .pipe( imagemin())
     .pipe( gulp.dest( paths.dest ))
-    .pipe( browserSync.stream());
-});
+    .pipe( browserSync.stream())
+);

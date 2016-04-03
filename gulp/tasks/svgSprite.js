@@ -11,12 +11,12 @@ const paths = {
   dest: path.join( CONFIG.root.dest, CONFIG.tasks.svgSprite.dest ),
 };
 
-gulp.task( 'svgSprite', () => {
-  return gulp.src( paths.src )
+gulp.task( 'svgSprite', () =>
+  gulp.src( paths.src )
     // Optimize
     .pipe( imagemin())
     // Combine into one
     .pipe( svgstore())
     .pipe( gulp.dest( paths.dest ))
-    .pipe( browserSync.stream());
-});
+    .pipe( browserSync.stream())
+);
