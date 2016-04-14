@@ -32,7 +32,7 @@
     "npm-run-all": "*",
 
     "nodemon": "*",
-    
+
     "babel-cli": "*",
     "babel-core": "*",
     "babel-loader": "*",
@@ -92,8 +92,10 @@
     "tern": "*",
 
     "eslint": "*",
-    "eslint-plugin-react": "*",
     "babel-eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-jsx-a11y": "*",
     "eslint-config-airbnb": "*"
   },
   "engines": {
