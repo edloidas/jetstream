@@ -24,15 +24,17 @@ A complex project template, based on webpack and other tools.
 * [Mocha](https://mochajs.org/)
 * [Istanbul](https://gotwarlost.github.io/istanbul/)
 
-##### Tools #####
+##### Tools #####  
 * [Tern](http://ternjs.net/)
 * [ESLint](http://eslint.org/)
 * [Stylelint](https://github.com/stylelint/stylelint/)
 
 ## TODO ##
 
+* Replace `gulp` with `npm run` and `Webpack`
+* Replace/update `jade` with `pug`
 * Add `babel-plugin-react-transform` and plugins support
-* Integrate `BrowserSync` and `Webpack`
+* Remove `BrowserSync`
 * Tools description
 
 ## Usage ##
