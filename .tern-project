@@ -10,7 +10,6 @@
   "plugins": {
     "complete_strings": {},
     "node": {},
-    "lint": {},
     "requirejs": {
       "baseURL": "./",
       "paths": {}
