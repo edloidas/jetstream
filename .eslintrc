@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": "airbnb-base",
   "rules": {
     "block-spacing": [ 2, "always" ],
     "space-before-function-paren": [ 2, { "anonymous": "always", "named": "never" } ],
@@ -9,6 +9,12 @@
     "array-bracket-spacing": [ 2, "always" ],
     "computed-property-spacing": [ 2, "always" ],
     "template-curly-spacing": [ 2, "always" ],
-    "react/require-render-return": 1
+    "no-restricted-syntax": [ "off" ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
   }
 }

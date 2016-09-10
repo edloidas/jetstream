@@ -1,8 +1,8 @@
-import CONFIG from '../config';
-
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import path from 'path';
+
+import CONFIG from '../config';
 
 const settings = {
   server: {
